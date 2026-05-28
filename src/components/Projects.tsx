@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, MonitorPlay } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
 export function Projects() {
@@ -30,14 +30,39 @@ export function Projects() {
           transition={{ duration: 0.7 }}
           className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
         >
-          {/* Project Image placeholder / Decoration */}
-          <div className="lg:col-span-7 relative h-[300px] md:h-[400px] rounded-xl overflow-hidden group">
-            <div className="absolute inset-0 bg-accent/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10" />
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] to-[#121212] border border-white/10 rounded-xl flex items-center justify-center p-8 group-hover:border-accent/50 transition-colors">
-               <div className="text-center">
-                  <MonitorPlay className="w-20 h-20 text-accent/50 mx-auto mb-4 group-hover:scale-110 transition-transform duration-500 group-hover:text-accent" />
-                  <p className="font-mono text-gray-500 text-sm">Dashboard Visualization Mockup</p>
-               </div>
+          {/* Project Live Preview */}
+          <div className="lg:col-span-7 relative h-[300px] md:h-[400px] rounded-xl overflow-hidden group border border-white/10 hover:border-accent/50 transition-colors shadow-2xl shadow-accent/5">
+            {/* "Live Preview" label */}
+            <div className="absolute top-0 left-0 right-0 z-20 bg-[#161616] border-b border-white/5 px-4 py-2 flex items-center gap-2">
+              <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
+              <div className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
+              <div className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
+              <span className="ml-2 text-xs font-mono text-gray-500">Live Preview</span>
+              <span className="ml-auto text-xs font-mono text-accent/70">sionna-visualizer.vercel.app</span>
+            </div>
+
+            {/* iframe */}
+            <div className="absolute inset-0 pt-[36px]">
+              <iframe
+                src="https://sionna-visualizer.vercel.app"
+                title="Sionna Visualizer Live Preview"
+                className="w-full h-full border-0 pointer-events-none"
+                loading="lazy"
+                sandbox="allow-scripts allow-same-origin"
+              />
+            </div>
+
+            {/* Fallback overlay — visible if iframe fails to load or on hover for aesthetic */}
+            <div className="absolute inset-0 pt-[36px] bg-gradient-to-t from-[#0a0a0a]/80 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
+              <a
+                href="https://sionna-visualizer.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent/90 text-black font-mono text-sm font-bold rounded-md hover:bg-accent transition-colors"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Open Full Site
+              </a>
             </div>
           </div>
 
