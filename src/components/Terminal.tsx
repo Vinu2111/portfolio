@@ -7,6 +7,9 @@ const terminalLines = [
   { type: "command", text: "$ git clone github.com/Vinu2111" },
   { type: "output", text: "Cloning into 'open-source-contributions'..." },
   { type: "blank", text: "" },
+  { type: "command", text: "$ cd error-prone-support && mvn test" },
+  { type: "success", text: "✅ PR #2275 merged by Rickie" },
+  { type: "blank", text: "" },
   { type: "command", text: "$ cd NullAway && mvn verify" },
   { type: "success", text: "✅ PR #1546 merged by Manu Sridharan" },
   { type: "blank", text: "" },
@@ -16,13 +19,8 @@ const terminalLines = [
   { type: "command", text: "$ cd adyen-java-api-library" },
   { type: "success", text: "✅ PR #1952 merged" },
   { type: "blank", text: "" },
-  { type: "command", text: "$ cd debezium && mvn test" },
-  { type: "review", text: "🔄 PR #7462 — LGTM from vjuranek" },
-  { type: "blank", text: "" },
   { type: "command", text: "$ sionna-visualizer --deploy" },
   { type: "success", text: "✅ Deployed → sionna-visualizer.vercel.app" },
-  { type: "blank", text: "" },
-  { type: "output", text: "All contributions verified. Ready to build." },
 ];
 
 export function Terminal() {

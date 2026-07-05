@@ -6,6 +6,13 @@ import { cn } from "@/lib/utils";
 
 const contributions = [
   {
+    repo: "PicnicSupermarket/error-prone-support",
+    repoUrl: "https://github.com/PicnicSupermarket/error-prone-support",
+    prUrl: "https://github.com/PicnicSupermarket/error-prone-support/pull/2275",
+    status: "Merged",
+    description: "Wrote a Refaster rule rewriting Optional.of(x).orElse(y) to requireNonNull(x). Iterated with core maintainers Rickie and Stephan202 on suppression handling and Javadoc linkage until all 78 tests passed.",
+  },
+  {
     repo: "uber/NullAway",
     repoUrl: "https://github.com/uber/NullAway",
     prUrl: "https://github.com/uber/NullAway/pull/1546",

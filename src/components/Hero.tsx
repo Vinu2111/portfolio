@@ -72,7 +72,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-lg text-gray-400 max-w-2xl mb-10 leading-relaxed"
             >
-              I&apos;m a Java Backend Engineer at Wipro building enterprise-grade REST APIs for the VodafoneIdea telecom client. I built the first public visualization dashboard for NVIDIA Sionna and actively contribute to open source projects at Uber, Zalando, Adyen, and Debezium.
+              I&apos;m a Java Backend Engineer at Wipro building enterprise-grade REST APIs for VodafoneIdea. I actively contribute to open source projects at Picnic, Uber, Zalando, and Adyen — and built the first public visualization dashboard for NVIDIA Sionna.
             </motion.p>
 
             <motion.div

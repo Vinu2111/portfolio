@@ -112,7 +112,7 @@ export function Skills() {
             <div className="flex flex-col gap-4">
               <div className="bg-background/80 border border-accent/20 p-4 rounded-lg flex items-center justify-between">
                 <span className="text-gray-400 font-mono text-sm">CGPA</span>
-                <span className="text-accent font-bold text-2xl font-mono">9.30</span>
+                <span className="text-accent font-bold text-2xl font-mono">8.56</span>
               </div>
               <div className="bg-background/80 border border-cyan-highlight/20 p-4 rounded-lg flex items-center justify-between">
                 <span className="text-gray-400 font-mono text-sm">Batch Rank</span>
